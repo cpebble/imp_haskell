@@ -1,0 +1,45 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           imp-h
+version:        0.0.0
+description:    An implementation of the simple imperative language in Haskell
+build-type:     Simple
+
+library
+  exposed-modules:
+      ImpAst
+      ImpInterp
+      ImpParser
+  other-modules:
+      ImpStandardParser
+      Main
+      Paths_imp_h
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , containers
+    , parsec
+    , text
+  default-language: Haskell2010
+
+executable imp-h
+  main-is: Main.hs
+  other-modules:
+      ImpAst
+      ImpInterp
+      ImpParser
+      ImpStandardParser
+      Paths_imp_h
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , containers
+    , parsec
+    , text
+  default-language: Haskell2010

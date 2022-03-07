@@ -1,0 +1,11 @@
+cur := 1;
+prev := 0;
+goal := 7;
+while i <= goal do {
+  tmp := cur + prev;
+  prev := cur;
+  cur := tmp;
+  i := i + 1
+};
+out := cur
+
